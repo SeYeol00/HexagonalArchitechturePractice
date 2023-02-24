@@ -1,6 +1,6 @@
-package com.example.hexagonalarchitechturepractice.application.router.port.output;
+package com.example.hexagonalarchitechturepractice.application.port.output;
 
-import com.example.hexagonalarchitechturepractice.domain.router.Router;
+import com.example.hexagonalarchitechturepractice.domain.entity.Router;
 
 import java.util.List;
 

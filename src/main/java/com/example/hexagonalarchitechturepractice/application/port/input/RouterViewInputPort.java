@@ -1,9 +1,10 @@
-package com.example.hexagonalarchitechturepractice.application.router.port.input;
+package com.example.hexagonalarchitechturepractice.application.port.input;
 
 
-import com.example.hexagonalarchitechturepractice.application.router.port.output.RouterViewOutputPort;
-import com.example.hexagonalarchitechturepractice.application.router.usecase.RouterViewUseCase;
-import com.example.hexagonalarchitechturepractice.domain.router.Router;
+import com.example.hexagonalarchitechturepractice.application.port.output.RouterViewOutputPort;
+import com.example.hexagonalarchitechturepractice.application.usecase.RouterViewUseCase;
+import com.example.hexagonalarchitechturepractice.domain.entity.Router;
+import com.example.hexagonalarchitechturepractice.domain.service.RouterSearch;
 import lombok.AllArgsConstructor;
 
 import java.util.List;
@@ -15,6 +16,6 @@ public class RouterViewInputPort implements RouterViewUseCase {
     @Override
     public List<Router> getRouters(Predicate<Router> filter) {
         var routers= routerViewOutputPort.fetchRouters();
-        return Router.retrieveRouter(routers,filter);
+        return RouterSearch.retrieveRouter(routers,filter);
     }
 }

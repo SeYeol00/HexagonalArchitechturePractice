@@ -1,4 +1,4 @@
-package com.example.hexagonalarchitechturepractice.domain.entity.router.valueobject;
+package com.example.hexagonalarchitechturepractice.domain.valueobject;
 
 import java.util.UUID;
 

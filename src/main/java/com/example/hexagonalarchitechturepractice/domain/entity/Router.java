@@ -1,4 +1,4 @@
-package com.example.hexagonalarchitechturepractice.domain.entity.router;
+package com.example.hexagonalarchitechturepractice.domain.entity;
 
 import com.example.hexagonalarchitechturepractice.domain.valueobject.RouterId;
 import com.example.hexagonalarchitechturepractice.domain.valueobject.RouterType;
